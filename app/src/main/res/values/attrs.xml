@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MyTextView">
+        
+        <attr name="left_text" format="string"></attr>
+        <attr name="left_textsize" format="dimension"></attr>
+        <attr name="left_text_color" format="color"></attr>
+        <attr name="left_bg_color" format="reference"></attr>
+
+
+        <attr name="middle_text" format="string"></attr>
+        <attr name="middle_textsize" format="dimension"></attr>
+        <attr name="middle_text_color" format="color"></attr>
+        <attr name="middle_bg_color" format="reference"></attr>
+
+
+        <attr name="right_text" format="string"></attr>
+        <attr name="right_textsize" format="dimension"></attr>
+        <attr name="right_text_color" format="color"></attr>
+        <attr name="right_bg_color" format="reference"></attr>
+
+    </declare-styleable>
+    
+</resources>

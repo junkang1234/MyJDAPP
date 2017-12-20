@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/relvone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/exit_login"
+            android:text="×"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="用户注册"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativetwo"
+        android:layout_below="@+id/relvone"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/one"
+            android:text="账号"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/editname"
+            android:textSize="25sp"
+            android:hint="手机号"
+            android:background="@null"
+            android:layout_toRightOf="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_below="@+id/editname"
+            android:background="#949494"
+            android:id="@+id/xinaone"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+        <TextView
+            android:layout_below="@+id/xinaone"
+            android:layout_toLeftOf="@+id/editpwd"
+            android:layout_width="wrap_content"
+            android:id="@+id/two"
+            android:text="密码"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_below="@+id/xinaone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editpwd"
+            android:textSize="25sp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:layout_toRightOf="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <TextView
+            android:layout_below="@+id/editpwd"
+            android:background="#949494"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </RelativeLayout>
+    <Button
+        android:layout_below="@+id/relativetwo"
+        android:layout_margin="15dp"
+        android:background="#FF4F01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="注册"
+        android:onClick="register"
+        android:id="@+id/buttonlogin"
+        android:gravity="center"
+        android:textColor="#fff"
+        ></Button>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:padding="5dp"
+    android:id="@+id/linear4"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_left"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="一加手机5 (A5000) 6GB+64GB 月岩灰 全网通 双卡双待 移动联通电信4G手机"
+                android:id="@+id/tv_shoplist_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="￥2499.00"
+                android:textColor="#f00"
+                android:layout_weight="2"
+                android:id="@+id/tv_shoplist_price"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_shoplist_ziying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自营"
+                    android:gravity="center"
+                    android:background="@drawable/text_shape"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/tv_shoplist_ziying"
+                    android:id="@+id/tv_shoplist_bendi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本地仓"
+                    android:gravity="center"
+                    android:background="@drawable/text_shape"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tv_shoplist_pingjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6215条评价"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/tv_shoplist_bendi"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tv_shoplist_haoping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%95好评"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/tv_shoplist_pingjia"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.FuKuanActivity">
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/image_exit"
+            android:layout_margin="10dp"
+            android:background="@mipmap/aas"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="京东收银台"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zhifua"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去支付"
+        android:background="#f00"
+        android:textColor="#fff"
+        />
+</RelativeLayout>

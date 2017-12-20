@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--搜索框--><LinearLayout
+        android:id="@+id/linear"
+        android:background="#f00"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <!--<ImageView-->
+            <!--android:padding="5dp"-->
+            <!--android:id="@+id/normal_code"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/ic_normal_code"-->
+            <!--android:layout_weight="3"-->
+            <!--/>-->
+    <TextView
+        android:id="@+id/normal_code"
+        android:drawableTop="@mipmap/ic_normal_code"
+        android:text="扫一扫"
+        android:textSize="10sp"
+        android:textColor="@color/bg_color"
+        android:gravity="center_horizontal"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <Button
+            android:layout_margin="7dp"
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="搜索一下"
+            android:textColor="#BCBCBC"
+            android:background="@drawable/searchbox_bj"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/normal_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/bg_color"
+            android:textSize="10dp"
+            android:text="消息"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/ic_normal_message"
+            android:layout_weight="3"/>
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <lenovo.example.com.myjdapp.untils.ObservableScrollView
+            android:layout_weight="1"
+        android:id="@+id/scro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--banner-->
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <!--分类-->
+        <RelativeLayout
+            android:background="#F5F5F5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vip"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"></android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_below="@+id/vip"
+                android:id="@+id/ll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/vf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ViewFlipper>
+
+        <!--秒杀-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_xsqg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#f00"
+                        android:text="京东秒杀"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="#000"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:text="02"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text=":"/>
+                    <TextView
+                        android:id="@+id/tv_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="#000"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:text="15"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text=":"/>
+                    <TextView
+                        android:id="@+id/tv_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="#000"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:text="36"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+        <!--推荐-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="为你推荐  "
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recytwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</lenovo.example.com.myjdapp.untils.ObservableScrollView>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

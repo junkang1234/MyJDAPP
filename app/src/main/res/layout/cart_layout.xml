@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/linear7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center"
+            android:text="购物车"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <Button
+        android:text="请登录"
+        android:id="@+id/login"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/linear7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <ExpandableListView
+            android:layout_below="@+id/linear7"
+            android:layout_marginTop="20dp"
+            android:id="@+id/expand1"
+            android:layout_width="match_parent"
+            android:fadingEdge="none"
+            android:groupIndicator="@null"
+            android:layout_above="@+id/relvone"
+            android:layout_height="wrap_content">
+        </ExpandableListView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relvone"
+            android:background="#FFFFFF"
+            >
+
+            <CheckBox
+                android:id="@+id/check_quanxuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:button="@drawable/check"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:text="合计:￥0"
+                android:layout_toRightOf="@+id/check_quanxuan"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/price"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_jiesuan"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="去结算"
+                android:background="#f00"
+                android:textColor="#fff"
+                android:padding="20dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+</RelativeLayout>

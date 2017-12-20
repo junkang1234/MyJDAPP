@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    tools:context="liuhao.baway.com.mvpdemo.activity.SettingPage">
+
+    <RelativeLayout
+        android:id="@+id/linear7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/image_left"
+            android:src="@mipmap/left_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:text="账户设置"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/linear7"
+        android:id="@+id/linone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_margin="10dp"
+            android:src="@mipmap/touxiang"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:text="zhujunakng15910315081"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:id="@+id/text_name"
+                android:text="用户名:jd_4e236746465165475"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/text_title"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/lintwo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linone"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/linthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="会员俱乐部"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_icon"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="PLUS会员"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linfive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="小白信用"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linsix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="地址管理"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linsixe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="增票资质"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="实名认证"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lineight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="账户安全"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linnine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="设置"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:text="退出登录"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imageview9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_jiantou"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

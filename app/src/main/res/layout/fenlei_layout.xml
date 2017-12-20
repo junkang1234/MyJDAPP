@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F3F5F7"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="#FF5001"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/normal_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_normal_code"
+            android:layout_weight="3"
+            />
+        <Button
+            android:layout_margin="7dp"
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="搜索一下"
+            android:textColor="#BCBCBC"
+            android:background="@drawable/searchbox_bj"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/normal_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_normal_message"
+            android:layout_weight="3"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recythree"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        ></android.support.v7.widget.RecyclerView>
+    <lenovo.example.com.myjdapp.untils.NoScrollViewPager
+        android:id="@+id/vip1"
+        android:layout_below="@id/linear"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/recythree"
+        android:layout_height="wrap_content"></lenovo.example.com.myjdapp.untils.NoScrollViewPager>
+
+
+</RelativeLayout>
